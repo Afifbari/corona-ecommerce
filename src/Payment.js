@@ -1,4 +1,4 @@
-import { Link, useHistory } from "react-router-dom";
+import { Link, useHistory, Redirect } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "./axios";
 import CheckoutProduct from "./CheckoutProduct";
@@ -80,6 +80,8 @@ function Payment() {
 
 	return (
 		<div className="payment">
+			{user ? <></> : alert("Please login first")}
+			{user ? <></> : <Redirect to="/login" />}
 			<div className="payment__container">
 				<h1>
 					Checkout (<Link to="/checkout">{basket?.length} items</Link>
