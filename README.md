@@ -2,7 +2,7 @@ This project is an online demo ecommerce site with full payment support where yo
 
 ## Live Demo:
 
-corona-emergency-store.netlify.app
+https://corona-emergency-store.netlify.app/
 
 ## Available Scripts
 
